@@ -1,0 +1,6 @@
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.exe
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.pdb
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.Properties.Resources.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csproj.GenerateResource.Cache
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.exe
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.pdb
