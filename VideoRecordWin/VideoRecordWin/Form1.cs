@@ -14,6 +14,7 @@ namespace VideoRecordWin
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("sa");
         }
     }
 }
