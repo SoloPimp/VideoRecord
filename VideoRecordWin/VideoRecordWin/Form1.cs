@@ -14,7 +14,9 @@ namespace VideoRecordWin
         public Form1()
         {
             InitializeComponent();
-            MessageBox.Show("sa");
+// Buraya bu
+//suraya bu
+//denemee
         }
     }
 }
