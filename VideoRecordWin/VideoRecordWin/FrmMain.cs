@@ -31,5 +31,11 @@ namespace VideoRecordWin
             frm.ShowDialog();
             this.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            FrmHakkinda frm = new FrmHakkinda();
+            frm.ShowDialog();
+        }
     }
 }

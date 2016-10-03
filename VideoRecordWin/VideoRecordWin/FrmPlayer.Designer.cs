@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.dosyaAçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dosyaHakkındaBilgiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dosyaAçToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bilgiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Pctresim = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnStop = new System.Windows.Forms.Button();
@@ -47,7 +49,7 @@
             // 
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dosyaAçToolStripMenuItem,
-            this.dosyaHakkındaBilgiToolStripMenuItem});
+            this.hakkındaToolStripMenuItem});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(801, 24);
@@ -56,17 +58,33 @@
             // 
             // dosyaAçToolStripMenuItem
             // 
+            this.dosyaAçToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dosyaAçToolStripMenuItem1,
+            this.bilgiToolStripMenuItem});
             this.dosyaAçToolStripMenuItem.Name = "dosyaAçToolStripMenuItem";
-            this.dosyaAçToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.dosyaAçToolStripMenuItem.Text = "Dosya Ac";
-            this.dosyaAçToolStripMenuItem.Click += new System.EventHandler(this.dosyaAcToolStripMenuItem_Click);
+            this.dosyaAçToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.dosyaAçToolStripMenuItem.Text = "Dosya";
             // 
-            // dosyaHakkındaBilgiToolStripMenuItem
+            // dosyaAçToolStripMenuItem1
             // 
-            this.dosyaHakkındaBilgiToolStripMenuItem.Name = "dosyaHakkındaBilgiToolStripMenuItem";
-            this.dosyaHakkındaBilgiToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.dosyaHakkındaBilgiToolStripMenuItem.Text = "Dosya Hakkında Bilgi";
-            this.dosyaHakkındaBilgiToolStripMenuItem.Click += new System.EventHandler(this.dosyaHakkndaToolStripMenuItem_Click);
+            this.dosyaAçToolStripMenuItem1.Name = "dosyaAçToolStripMenuItem1";
+            this.dosyaAçToolStripMenuItem1.Size = new System.Drawing.Size(97, 22);
+            this.dosyaAçToolStripMenuItem1.Text = "Aç";
+            this.dosyaAçToolStripMenuItem1.Click += new System.EventHandler(this.dosyaAcToolStripMenuItem_Click);
+            // 
+            // bilgiToolStripMenuItem
+            // 
+            this.bilgiToolStripMenuItem.Name = "bilgiToolStripMenuItem";
+            this.bilgiToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.bilgiToolStripMenuItem.Text = "Bilgi";
+            this.bilgiToolStripMenuItem.Click += new System.EventHandler(this.dosyaHakkndaToolStripMenuItem_Click);
+            // 
+            // hakkındaToolStripMenuItem
+            // 
+            this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
+            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.hakkındaToolStripMenuItem.Text = "Hakkımızda";
+            this.hakkındaToolStripMenuItem.Click += new System.EventHandler(this.hakkindaToolStripMenuItem_Click);
             // 
             // Pctresim
             // 
@@ -142,12 +160,14 @@
 
         private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem dosyaAçToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dosyaHakkındaBilgiToolStripMenuItem;
         private System.Windows.Forms.PictureBox Pctresim;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnplay;
         private System.Windows.Forms.OpenFileDialog OpenFile;
         private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.ToolStripMenuItem bilgiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dosyaAçToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem hakkındaToolStripMenuItem;
     }
 }
