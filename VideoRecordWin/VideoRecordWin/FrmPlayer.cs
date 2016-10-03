@@ -34,8 +34,9 @@ namespace VideoRecordWin
                 Timer.Interval = Dosya.interval;
                 son = Dosya.Kare_Adet();
                 Resimler = Dosya.Dizi_Dondur();
+                Pctresim.Image = Resimler[0];
             }
-            else MessageBox.Show("Bir Dosya Seçmediniz....");
+            else MessageBox.Show("Bir Dosya Seçmediniz....","HATA",MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
 
         private void bntplay_Click(object sender, EventArgs e)
@@ -58,7 +59,7 @@ namespace VideoRecordWin
             if (i==son)
             {
                 Timer.Stop();
-                MessageBox.Show("Video Bitti..");
+                MessageBox.Show("Video Bitti..\nToplam : "+son+" kare oynatıldı..");
                 i = 0;
             }
             Pctresim.Image = Resimler[i];
@@ -70,6 +71,12 @@ namespace VideoRecordWin
             FrmBilgi frm = new FrmBilgi(Info);
             frm.ShowDialog();
 
+        }
+
+        private void hakkindaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHakkinda frm = new FrmHakkinda();
+            frm.ShowDialog();
         }
     }
 }

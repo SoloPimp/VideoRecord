@@ -113,7 +113,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmRecorder";
-            this.Text = "FrmRecorder";
+            this.Text = "RECORDER";
             this.Load += new System.EventHandler(this.FrmRecorder_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
