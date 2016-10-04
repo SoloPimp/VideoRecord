@@ -25,14 +25,14 @@ namespace VideoRecordWin
         {
             if (OpenFile.ShowDialog() == DialogResult.OK)
             {
-                btnStop.Enabled = true;
-                btnplay.Enabled = true;
+                groupBox1.Enabled = true;
                 FileStream fs = new FileStream(OpenFile.FileName, FileMode.Open);
                 BinaryFormatter bf = new BinaryFormatter();
                 Dosya = (Kayit)bf.Deserialize(fs);
                 Info = Dosya.Info;
                 Timer.Interval = Dosya.interval;
                 son = Dosya.Kare_Adet();
+                trackBar.Maximum = son;
                 Resimler = Dosya.Dizi_Dondur();
                 Pctresim.Image = Resimler[0];
             }
@@ -44,6 +44,7 @@ namespace VideoRecordWin
             Timer.Start();
             btnplay.Enabled = false;
             btnStop.Enabled = true;
+            btnStop.Select();
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -51,19 +52,22 @@ namespace VideoRecordWin
             Timer.Stop();
             btnplay.Enabled = true;
             btnStop.Enabled = false;
+            btnplay.Select();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            
-            if (i==son)
+            Pctresim.Image = Resimler[i];
+            if (i+1 == son)
             {
                 Timer.Stop();
-                MessageBox.Show("Video Bitti..\nToplam : "+son+" kare oynatıldı..");
+                trackBar.Value = i+1;
+                MessageBox.Show("Video Bitti..\nToplam : " + son + " kare Oynatıldı..","BİLGİ",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 i = 0;
             }
-            Pctresim.Image = Resimler[i];
+            trackBar.Value = i;
             i++;
+                
         }
 
         private void dosyaHakkndaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,6 +81,40 @@ namespace VideoRecordWin
         {
             FrmHakkinda frm = new FrmHakkinda();
             frm.ShowDialog();
+        }
+
+        private void trackBar_Scroll(object sender, EventArgs e)
+        {
+            Timer.Stop();
+            i=trackBar.Value;
+            Pctresim.Image = Resimler[i];
+            
+        }
+
+        private void btnh_Click(object sender, EventArgs e)
+        {
+            if (Timer.Interval>10)
+            {
+                Timer.Interval -= 10;
+                lbldurum.Text = (Convert.ToInt32(lbldurum.Text) +1).ToString();
+            }
+        }
+
+        private void btny_Click(object sender, EventArgs e)
+        {
+            if ((Convert.ToInt32(lbldurum.Text) - 1)>=-20)
+            {
+                Timer.Interval += 10;
+                lbldurum.Text = (Convert.ToInt32(lbldurum.Text) - 1).ToString(); 
+            }
+        }
+
+        private void FrmPlayer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Space)
+            {
+                
+            }
         }
     }
 }
