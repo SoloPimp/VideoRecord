@@ -44,7 +44,7 @@ namespace VideoRecordWin
             Timer.Start();
             btnplay.Enabled = false;
             btnStop.Enabled = true;
-            btnStop.Select();
+            Pctresim.Select();
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace VideoRecordWin
             Timer.Stop();
             btnplay.Enabled = true;
             btnStop.Enabled = false;
-            btnplay.Select();
+            Pctresim.Select();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -64,6 +64,7 @@ namespace VideoRecordWin
                 trackBar.Value = i+1;
                 MessageBox.Show("Video Bitti..\nToplam : " + son + " kare Oynatıldı..","BİLGİ",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 i = 0;
+                btnplay.Enabled = true;
             }
             trackBar.Value = i;
             i++;
@@ -111,10 +112,14 @@ namespace VideoRecordWin
 
         private void FrmPlayer_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode==Keys.Space)
-            {
-                
-            }
+            Pctresim.Select();
+            if (e.KeyCode == Keys.Right)
+                btnh_Click(null, null);
+            else if
+                (e.KeyCode == Keys.Left)
+                btny_Click(null, null);
+            else if (e.KeyCode == Keys.Space)
+                Timer.Enabled = Timer.Enabled ? false : true;
         }
     }
 }
