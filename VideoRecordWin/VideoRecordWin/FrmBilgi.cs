@@ -23,7 +23,7 @@ namespace VideoRecordWin
             if (Info != null)
             {
                 lbltarih.Text = Info.Tarih.Date.ToShortDateString();
-                lblsaat.Text = Info.Tarih.ToShortTimeString();
+                lblsaat.Text = Info.Tarih.ToLongTimeString(); ;
                 lblkalite.Text = Info.Kalite;
                 lblkare.Text = Info.Kare_Sayisi.ToString();
 
