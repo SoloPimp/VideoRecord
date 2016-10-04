@@ -32,11 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbltarih = new System.Windows.Forms.Label();
-            this.lblsaat = new System.Windows.Forms.Label();
-            this.lblkalite = new System.Windows.Forms.Label();
             this.lblkare = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblkalite = new System.Windows.Forms.Label();
+            this.lblsaat = new System.Windows.Forms.Label();
+            this.lbltarih = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,33 +84,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BİLGİ";
             // 
-            // lbltarih
-            // 
-            this.lbltarih.AutoSize = true;
-            this.lbltarih.Location = new System.Drawing.Point(110, 32);
-            this.lbltarih.Name = "lbltarih";
-            this.lbltarih.Size = new System.Drawing.Size(27, 13);
-            this.lbltarih.TabIndex = 3;
-            this.lbltarih.Text = "tarih";
-            // 
-            // lblsaat
-            // 
-            this.lblsaat.AutoSize = true;
-            this.lblsaat.Location = new System.Drawing.Point(110, 62);
-            this.lblsaat.Name = "lblsaat";
-            this.lblsaat.Size = new System.Drawing.Size(27, 13);
-            this.lblsaat.TabIndex = 4;
-            this.lblsaat.Text = "saat";
-            // 
-            // lblkalite
-            // 
-            this.lblkalite.AutoSize = true;
-            this.lblkalite.Location = new System.Drawing.Point(110, 93);
-            this.lblkalite.Name = "lblkalite";
-            this.lblkalite.Size = new System.Drawing.Size(32, 13);
-            this.lblkalite.TabIndex = 5;
-            this.lblkalite.Text = "kalite";
-            // 
             // lblkare
             // 
             this.lblkare.AutoSize = true;
@@ -129,11 +102,38 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Kare Sayısı :";
             // 
+            // lblkalite
+            // 
+            this.lblkalite.AutoSize = true;
+            this.lblkalite.Location = new System.Drawing.Point(110, 93);
+            this.lblkalite.Name = "lblkalite";
+            this.lblkalite.Size = new System.Drawing.Size(32, 13);
+            this.lblkalite.TabIndex = 5;
+            this.lblkalite.Text = "kalite";
+            // 
+            // lblsaat
+            // 
+            this.lblsaat.AutoSize = true;
+            this.lblsaat.Location = new System.Drawing.Point(110, 62);
+            this.lblsaat.Name = "lblsaat";
+            this.lblsaat.Size = new System.Drawing.Size(27, 13);
+            this.lblsaat.TabIndex = 4;
+            this.lblsaat.Text = "saat";
+            // 
+            // lbltarih
+            // 
+            this.lbltarih.AutoSize = true;
+            this.lbltarih.Location = new System.Drawing.Point(110, 32);
+            this.lbltarih.Name = "lbltarih";
+            this.lbltarih.Size = new System.Drawing.Size(27, 13);
+            this.lbltarih.TabIndex = 3;
+            this.lbltarih.Text = "tarih";
+            // 
             // FrmBilgi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 167);
+            this.ClientSize = new System.Drawing.Size(360, 167);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
