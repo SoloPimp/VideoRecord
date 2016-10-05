@@ -10,3 +10,4 @@ D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x
 D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csprojResolveAssemblyReference.cache
 D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmBilgi.resources
 D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmHakkinda.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmAlanSec.resources
