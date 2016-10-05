@@ -11,12 +11,16 @@ namespace VideoRecordWin
 {
     public partial class FrmRecorder : Form
     {
-        public FrmRecorder()
-        {
-            InitializeComponent();
-        }
         int kalite = 100;
         Kayit dosya;
+        Point ilk, son;
+        public FrmRecorder( Point ilk, Point son)
+        {
+            this.ilk = ilk;
+            this.son = son;
+            InitializeComponent();
+        }
+        
         private void FrmRecorder_Load(object sender, EventArgs e)
         {
             dosya = new Kayit();
@@ -37,12 +41,12 @@ namespace VideoRecordWin
                     break;
             }
         }
-        Bitmap Ekran_Al()
+        Bitmap Ekran_Al(Point ilk, Point son)
         {
-            Bitmap bmp = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Bitmap bmp = new Bitmap(son.X - ilk.X, son.Y - ilk.Y);
 
             Graphics gr = Graphics.FromImage(bmp);
-            gr.CopyFromScreen(0, 0, 0, 0, new Size(bmp.Size.Width, bmp.Size.Height));
+            gr.CopyFromScreen(ilk.X, ilk.Y, 0, 0, bmp.Size);
             return bmp;
         }
 
@@ -65,7 +69,7 @@ namespace VideoRecordWin
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            dosya.Resim_Ekle(Ekran_Al());
+            dosya.Resim_Ekle(Ekran_Al(ilk,son));
         }
 
         private void btnstop_Click(object sender, EventArgs e)

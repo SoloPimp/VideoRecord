@@ -26,7 +26,7 @@ namespace VideoRecordWin
 
         private void btnrecordr_Click(object sender, EventArgs e)
         {
-            FrmRecorder frm = new FrmRecorder();
+            FrmAlanSec frm = new FrmAlanSec();
             this.Hide();
             frm.ShowDialog();
             this.Show();

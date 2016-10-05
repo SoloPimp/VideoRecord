@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAlanSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlanSec.Designer.cs">
+      <DependentUpon>FrmAlanSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBilgi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Kayit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAlanSec.resx">
+      <DependentUpon>FrmAlanSec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBilgi.resx">
       <DependentUpon>FrmBilgi.cs</DependentUpon>
     </EmbeddedResource>
