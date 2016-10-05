@@ -40,7 +40,6 @@
             this.Name = "FrmAlanSec";
             this.Opacity = 0.1D;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmAlanSec_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseDown);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseUp);
             this.ResumeLayout(false);

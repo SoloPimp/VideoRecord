@@ -89,6 +89,7 @@ namespace VideoRecordWin
             Timer.Stop();
             i=trackBar.Value;
             Pctresim.Image = Resimler[i];
+            btnplay.Enabled = true;
             
         }
 
