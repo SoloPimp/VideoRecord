@@ -38,9 +38,10 @@
             this.ControlBox = false;
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.Name = "FrmAlanSec";
-            this.Opacity = 0.1D;
+            this.Opacity = 0.3D;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseUp);
             this.ResumeLayout(false);
 
