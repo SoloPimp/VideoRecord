@@ -35,6 +35,10 @@
             this.bilgiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbldurum = new System.Windows.Forms.Label();
+            this.btny = new System.Windows.Forms.Button();
+            this.btnh = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnplay = new System.Windows.Forms.Button();
             this.OpenFile = new System.Windows.Forms.OpenFileDialog();
@@ -43,10 +47,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Pctresim = new System.Windows.Forms.PictureBox();
-            this.btny = new System.Windows.Forms.Button();
-            this.btnh = new System.Windows.Forms.Button();
-            this.lbldurum = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
@@ -79,14 +79,14 @@
             // dosyaAçToolStripMenuItem1
             // 
             this.dosyaAçToolStripMenuItem1.Name = "dosyaAçToolStripMenuItem1";
-            this.dosyaAçToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dosyaAçToolStripMenuItem1.Size = new System.Drawing.Size(97, 22);
             this.dosyaAçToolStripMenuItem1.Text = "Aç";
             this.dosyaAçToolStripMenuItem1.Click += new System.EventHandler(this.dosyaAcToolStripMenuItem_Click);
             // 
             // bilgiToolStripMenuItem
             // 
             this.bilgiToolStripMenuItem.Name = "bilgiToolStripMenuItem";
-            this.bilgiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bilgiToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.bilgiToolStripMenuItem.Text = "Bilgi";
             this.bilgiToolStripMenuItem.Click += new System.EventHandler(this.dosyaHakkndaToolStripMenuItem_Click);
             // 
@@ -111,6 +111,46 @@
             this.groupBox1.Size = new System.Drawing.Size(777, 64);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(624, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "X";
+            // 
+            // lbldurum
+            // 
+            this.lbldurum.AutoSize = true;
+            this.lbldurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbldurum.Location = new System.Drawing.Point(603, 28);
+            this.lbldurum.Name = "lbldurum";
+            this.lbldurum.Size = new System.Drawing.Size(14, 13);
+            this.lbldurum.TabIndex = 4;
+            this.lbldurum.Text = "0";
+            // 
+            // btny
+            // 
+            this.btny.Location = new System.Drawing.Point(675, 13);
+            this.btny.Name = "btny";
+            this.btny.Size = new System.Drawing.Size(75, 42);
+            this.btny.TabIndex = 3;
+            this.btny.Text = "<<";
+            this.btny.UseVisualStyleBackColor = true;
+            this.btny.Click += new System.EventHandler(this.btny_Click);
+            // 
+            // btnh
+            // 
+            this.btnh.Location = new System.Drawing.Point(493, 13);
+            this.btnh.Name = "btnh";
+            this.btnh.Size = new System.Drawing.Size(75, 42);
+            this.btnh.TabIndex = 2;
+            this.btnh.Text = ">>";
+            this.btnh.UseVisualStyleBackColor = true;
+            this.btnh.Click += new System.EventHandler(this.btnh_Click);
             // 
             // btnStop
             // 
@@ -176,46 +216,6 @@
             this.Pctresim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pctresim.TabIndex = 2;
             this.Pctresim.TabStop = false;
-            // 
-            // btny
-            // 
-            this.btny.Location = new System.Drawing.Point(675, 13);
-            this.btny.Name = "btny";
-            this.btny.Size = new System.Drawing.Size(75, 42);
-            this.btny.TabIndex = 3;
-            this.btny.Text = "<<";
-            this.btny.UseVisualStyleBackColor = true;
-            this.btny.Click += new System.EventHandler(this.btny_Click);
-            // 
-            // btnh
-            // 
-            this.btnh.Location = new System.Drawing.Point(493, 13);
-            this.btnh.Name = "btnh";
-            this.btnh.Size = new System.Drawing.Size(75, 42);
-            this.btnh.TabIndex = 2;
-            this.btnh.Text = ">>";
-            this.btnh.UseVisualStyleBackColor = true;
-            this.btnh.Click += new System.EventHandler(this.btnh_Click);
-            // 
-            // lbldurum
-            // 
-            this.lbldurum.AutoSize = true;
-            this.lbldurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbldurum.Location = new System.Drawing.Point(603, 28);
-            this.lbldurum.Name = "lbldurum";
-            this.lbldurum.Size = new System.Drawing.Size(14, 13);
-            this.lbldurum.TabIndex = 4;
-            this.lbldurum.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(624, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "X";
             // 
             // FrmPlayer
             // 

@@ -16,9 +16,6 @@ namespace VideoRecordWin
             InitializeComponent();
         }
         Point ilk, son;
-        private void FrmAlanSec_Load(object sender, EventArgs e)
-        {
-        }
         private void FrmAlanSec_MouseDown(object sender, MouseEventArgs e)
         {
             ilk = Cursor.Position;
@@ -28,6 +25,7 @@ namespace VideoRecordWin
         {
             son = Cursor.Position;
             FrmRecorder frm = new FrmRecorder(ilk, son);
+            this.Hide();
             this.Close();
             frm.ShowDialog();
         }
