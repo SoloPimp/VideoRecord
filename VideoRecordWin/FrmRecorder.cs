@@ -50,7 +50,7 @@ namespace VideoRecordWin
             Graphics gr = Graphics.FromImage(bmp);
             gr.CopyFromScreen(ilk.X, ilk.Y, 0, 0, bmp.Size);
             MemoryStream ms = new MemoryStream();
-            bmp.Save(ms, ImageFormat.Jpeg);
+            bmp.Save(ms, ImageFormat.Png);
             return ms.GetBuffer(); ;
         }
 

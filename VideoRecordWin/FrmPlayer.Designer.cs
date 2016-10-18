@@ -229,7 +229,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.Menu;
             this.Name = "FrmPlayer";
-            this.Text = "FrmPlayer";
+            this.Text = "PLAYER";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmPlayer_KeyDown);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
