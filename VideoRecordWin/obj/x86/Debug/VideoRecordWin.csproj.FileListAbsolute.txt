@@ -1,0 +1,26 @@
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.exe
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.pdb
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.Properties.Resources.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csproj.GenerateResource.Cache
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.exe
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.pdb
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.frmmain.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmRecorder.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmPlayer.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csprojResolveAssemblyReference.cache
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmBilgi.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmHakkinda.resources
+D:\BİLGİSAYAR PROĞRAMLAMA\VİSUAL STUDİO\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmAlanSec.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.exe
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.pdb
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.exe
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\bin\Debug\VideoRecordWin.pdb
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csprojResolveAssemblyReference.cache
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmAlanSec.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmBilgi.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmHakkinda.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.frmmain.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmPlayer.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.FrmRecorder.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.Properties.Resources.resources
+C:\Users\Bilgisayar\Desktop\VideoRecordWin\VideoRecordWin\obj\x86\Debug\VideoRecordWin.csproj.GenerateResource.Cache
