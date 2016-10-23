@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace VideoRecordWin
 {
@@ -36,6 +37,23 @@ namespace VideoRecordWin
         {
             FrmHakkinda frm = new FrmHakkinda();
             frm.ShowDialog();
+        }
+
+        private void frmmain_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Registry.ClassesRoot.CreateSubKey(".ves").SetValue("VES", "VES_Dosyasi.ves");
+                RegistryKey rk = Registry.ClassesRoot.CreateSubKey("VES_Dosyasi.ves");
+                rk.CreateSubKey("DefaultIcon").SetValue("VES", Application.StartupPath + "\\icon.png");
+                rk.CreateSubKey(@"shell\open\command").SetValue("VES", "\"" + Application.ExecutablePath + "\"%1");
+
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
         }
     }
 }

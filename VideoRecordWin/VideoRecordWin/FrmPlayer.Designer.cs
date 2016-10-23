@@ -41,17 +41,16 @@
             this.btnh = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnplay = new System.Windows.Forms.Button();
+            this.lblsure = new System.Windows.Forms.Label();
             this.OpenFile = new System.Windows.Forms.OpenFileDialog();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.trackBar = new System.Windows.Forms.TrackBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Pctresim = new System.Windows.Forms.PictureBox();
             this.Menu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pctresim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,6 +171,16 @@
             this.btnplay.UseVisualStyleBackColor = true;
             this.btnplay.Click += new System.EventHandler(this.bntplay_Click);
             // 
+            // lblsure
+            // 
+            this.lblsure.AutoSize = true;
+            this.lblsure.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsure.Location = new System.Drawing.Point(710, 10);
+            this.lblsure.Name = "lblsure";
+            this.lblsure.Size = new System.Drawing.Size(57, 13);
+            this.lblsure.TabIndex = 6;
+            this.lblsure.Text = "00:00:00";
+            // 
             // OpenFile
             // 
             this.OpenFile.FileName = "Dosya Sec";
@@ -186,12 +195,13 @@
             this.trackBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trackBar.Location = new System.Drawing.Point(6, 7);
             this.trackBar.Name = "trackBar";
-            this.trackBar.Size = new System.Drawing.Size(764, 45);
+            this.trackBar.Size = new System.Drawing.Size(708, 45);
             this.trackBar.TabIndex = 3;
             this.trackBar.Scroll += new System.EventHandler(this.trackBar_Scroll);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblsure);
             this.groupBox2.Controls.Add(this.trackBar);
             this.groupBox2.Location = new System.Drawing.Point(12, 508);
             this.groupBox2.Name = "groupBox2";
@@ -199,37 +209,36 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.Pctresim);
-            this.groupBox3.Location = new System.Drawing.Point(12, 27);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(777, 482);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            // 
             // Pctresim
             // 
-            this.Pctresim.Location = new System.Drawing.Point(3, 9);
+            this.Pctresim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pctresim.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Pctresim.Location = new System.Drawing.Point(16, 27);
             this.Pctresim.Name = "Pctresim";
-            this.Pctresim.Size = new System.Drawing.Size(771, 467);
+            this.Pctresim.Size = new System.Drawing.Size(771, 475);
             this.Pctresim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pctresim.TabIndex = 2;
+            this.Pctresim.TabIndex = 5;
             this.Pctresim.TabStop = false;
+            this.Pctresim.DoubleClick += new System.EventHandler(this.Pctresim_DoubleClick);
             // 
             // FrmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 606);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.Pctresim);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.KeyPreview = true;
             this.MainMenuStrip = this.Menu;
+            this.MaximizeBox = false;
             this.Name = "FrmPlayer";
-            this.Text = "FrmPlayer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "PLAYER";
+            this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPlayer_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmPlayer_KeyDown);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
@@ -238,7 +247,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pctresim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,11 +267,11 @@
         private System.Windows.Forms.ToolStripMenuItem hakkındaToolStripMenuItem;
         private System.Windows.Forms.TrackBar trackBar;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox Pctresim;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbldurum;
         private System.Windows.Forms.Button btny;
         private System.Windows.Forms.Button btnh;
+        private System.Windows.Forms.Label lblsure;
+        private System.Windows.Forms.PictureBox Pctresim;
     }
 }

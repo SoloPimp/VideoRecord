@@ -123,4 +123,14 @@
   <metadata name="SaveFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>99, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhTAAdAIEAAAAAAP////cKCv///yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAADACwAAAAATAAd
+        AAAIwwAHCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHgwJCigz5sSTBkSgFLEypciDLlidR
+        Xnw5UuFLlyxjprRIUyZCkQJrDgAKUihJij13FoVJlKhBpxiT+nx6dOhRqDhhZpQqlGpLpzetao3KtWrB
+        nFl9Yp1ZdmxaqGvFcmzrNujVqnHjVqT78y5Tszrnck0I1m/fpnUhSrWJ1+9UsY+R0lzZ+CtanXojhjXJ
+        ubPnz6BDix5NurTp06hTq1YYEAA7
+</value>
+  </data>
 </root>
