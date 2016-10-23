@@ -32,13 +32,15 @@
             // 
             // FrmAlanSec
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
             this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAlanSec";
-            this.Opacity = 0.3D;
+            this.Opacity = 0.25D;
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmAlanSec_MouseMove);

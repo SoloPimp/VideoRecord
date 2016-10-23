@@ -71,10 +71,12 @@
             this.Controls.Add(this.btnrecordr);
             this.Controls.Add(this.btnplayer);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmmain";
             this.Text = "VES VİDEO";
+            this.Load += new System.EventHandler(this.frmmain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -38,7 +38,7 @@
             this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(260, 228);
+            this.groupBox1.Size = new System.Drawing.Size(260, 233);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BU PROJEDE EMEĞİ GEÇENLER";
@@ -46,23 +46,26 @@
             // richTextBox1
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Enabled = false;
             this.richTextBox1.Location = new System.Drawing.Point(6, 19);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(248, 203);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "\n\n\nBu Proje  ..........";
+            this.richTextBox1.Text = "\n\n\nBu Proje  ..........\n\nVolkan TANBUROĞLU\n\nErdal KOÇAK\n\nSerkan ÇALIKUŞU\n\nVES VID" +
+    "EO @ 2016\n";
             // 
             // FrmHakkinda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 260);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmHakkinda";
             this.Text = "HAKKIMIZDA";
+            this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

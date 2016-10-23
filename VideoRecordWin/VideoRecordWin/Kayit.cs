@@ -11,10 +11,10 @@ namespace VideoRecordWin
     [Serializable]
     class Kayit
     {
-        List<Bitmap> dizi = new List<Bitmap>();
+        List<byte[]> dizi = new List<byte[]>();
         public int interval;
         public Bilgi Info;
-        public void Resim_Ekle(Bitmap bmp)
+        public void Resim_Ekle(byte[] bmp)
         {
             dizi.Add(bmp);
         }
@@ -22,7 +22,7 @@ namespace VideoRecordWin
         {
             return dizi.Count;
         }
-        public List<Bitmap> Dizi_Dondur()
+        public List<byte[]> Dizi_Dondur()
         {
             return dizi;
         }
@@ -40,6 +40,7 @@ namespace VideoRecordWin
         public DateTime Tarih;
         public int Kare_Sayisi;
         public string Kalite;
+        public string sure;
         public Bilgi(DateTime tarih, int kare, string kalite)
         { Tarih = tarih; Kare_Sayisi = kare; Kalite = kalite; }
     }

@@ -32,6 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblsure = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.lblkare = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblkalite = new System.Windows.Forms.Label();
@@ -69,6 +71,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblsure);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblkare);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.lblkalite);
@@ -84,10 +88,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BİLGİ";
             // 
+            // lblsure
+            // 
+            this.lblsure.AutoSize = true;
+            this.lblsure.Location = new System.Drawing.Point(275, 62);
+            this.lblsure.Name = "lblsure";
+            this.lblsure.Size = new System.Drawing.Size(27, 13);
+            this.lblsure.TabIndex = 9;
+            this.lblsure.Text = "sure";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(200, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Kayıt Süresi :";
+            // 
             // lblkare
             // 
             this.lblkare.AutoSize = true;
-            this.lblkare.Location = new System.Drawing.Point(279, 32);
+            this.lblkare.Location = new System.Drawing.Point(274, 32);
             this.lblkare.Name = "lblkare";
             this.lblkare.Size = new System.Drawing.Size(28, 13);
             this.lblkare.TabIndex = 7;
@@ -135,10 +157,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 167);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmBilgi";
             this.Text = "VİDEO HAKKINDA";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmBilgi_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -157,5 +181,7 @@
         private System.Windows.Forms.Label lbltarih;
         private System.Windows.Forms.Label lblkare;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblsure;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -26,7 +26,7 @@ namespace VideoRecordWin
                 lblsaat.Text = Info.Tarih.ToLongTimeString(); ;
                 lblkalite.Text = Info.Kalite;
                 lblkare.Text = Info.Kare_Sayisi.ToString();
-
+                lblsure.Text = Info.sure;
             }
             else { MessageBox.Show("Lütfen uygun bir dosya seçtiğinizden emin olun..","HATA",MessageBoxButtons.OK,MessageBoxIcon.Error); this.Close(); }
             

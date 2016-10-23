@@ -27,9 +27,9 @@ namespace VideoRecordWin
         private void FrmAlanSec_MouseUp(object sender, MouseEventArgs e)
         {
             son = Cursor.Position;
-            FrmRecorder frm = new FrmRecorder(ilk, son);
             this.Hide();
             this.Close();
+            FrmRecorder frm = new FrmRecorder(ilk, son);           
             frm.ShowDialog();
         }
 
